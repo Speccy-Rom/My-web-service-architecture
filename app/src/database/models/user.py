@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 
-from .. import DeclarativeBase
+from app.src.clients import DeclarativeBase
 
 
 class UserModel(DeclarativeBase):
