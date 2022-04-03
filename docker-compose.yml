@@ -22,4 +22,4 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: EXAMPLE
     ports:
-      - "5432:5432"
+      - "5430:5432"
