@@ -24,7 +24,7 @@ class DeploySettings(BaseSettings):
 
 class DatabaseSession(BaseSettings):
     POSTGRES_HOST: str = "0.0.0.0"
-    POSTGRES_PORT: int = 5432
+    POSTGRES_PORT: int = 5434
     POSTGRES_USER: str = "root"
     POSTGRES_PASSWORD: str = "root"
     POSTGRES_DB: str = "EXAMPLE"

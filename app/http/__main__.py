@@ -1,4 +1,4 @@
-import uvicorn
+import uvicorn # noqa
 
 from app.http.app import create_app
 from app.settings import deploy_settings
