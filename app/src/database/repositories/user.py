@@ -47,8 +47,9 @@ class UserCreateRepository(BaseRepository):
         if UserSearchRepository.search_by_username_or_email(username=username, email=email, session=session):
             raise UserAlreadyRegisterError
 
-        user: UserModel = UserCRUDRepository.insert(username=username, email=email, session=session)
-        return user
+        return UserCRUDRepository.insert(
+            username=username, email=email, session=session
+        )
 
 
 class UserUpdateRepository(BaseRepository):
